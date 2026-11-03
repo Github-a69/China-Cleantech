@@ -6,8 +6,11 @@ This projects studies China's cleantech exports over 8 years across 250 countrie
 # Key Questions and Analysis :
 
 -What is the yearly exports trend ?
+
 -Which category has highest exports and which has lowest ?
+
 -Which region has highest exports and which has lowest ?
+
 -Regional and seasonality patterns in exports such as :
 Which months have the greatest variability?
 Are some months consistently stronger than others?
