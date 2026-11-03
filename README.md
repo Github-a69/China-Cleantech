@@ -1,7 +1,7 @@
 # China Cleantech Exports
 
 
-This projects studies China's cleantech exports over 8 years across 250 countries and 7 regions. The data source is Energy Ember https://ember-energy.org/data/china-cleantech-export-data/#summary
+This projects studies China's cleantech exports over 8 years (2018 : 2026) across 250 countries and 7 regions. The data source is Energy Ember https://ember-energy.org/data/china-cleantech-export-data/#summary
 
 # Key Questions and Analysis :
 
