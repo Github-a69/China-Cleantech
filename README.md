@@ -18,4 +18,4 @@ Do Batteries, EVs, Solar PV, etc. have different seasonal patterns?
 When do China's cleantech exports tend to peak or decline?
  
 -Predictive Analysis:
-Using regression analysis, we are predicting the export rolling sum USD.
+using regression models, we are forecasting the export rolling sum USD.
