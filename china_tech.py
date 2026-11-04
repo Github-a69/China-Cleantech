@@ -1,4 +1,4 @@
-%%writefile /kaggle/working/china_tech.py
+
 
 
 
