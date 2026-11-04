@@ -1,7 +1,5 @@
 
 
-
-Python: 3.13.18 
 Scikit-learn: 1.6.1
 Pandas 2.3.3
 NumPy: 2.1.3
