@@ -76,9 +76,9 @@ if page == 'Overview':
        # analysis and visualization page
 
 elif page == 'Analysis' :
-    tab1,tab2,tab3,tab4,tab5 = st.tabs(['Distributions','Exports by  Category',
+    tab1,tab2,tab3,tab4,tab5,tab6 = st.tabs(['Distributions','Exports by  Category',
                                              'Exports by Region','Time Series - Amount', 
-                                             'Time Series - Seasonality by Category')
+                                             'Time Series - Seasonality by Category','Summary])
     
     with tab1 :
         col6,col7= st.columns(2,gap = 'large')
@@ -168,6 +168,10 @@ elif page == 'Analysis' :
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Heating and cooling systems')
         
             line_5.show() 
+
+    with tab6:
+        st.info('China exports value in cleantech has increased steadily since 2018.")
+        
 
 
 
