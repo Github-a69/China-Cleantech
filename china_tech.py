@@ -169,8 +169,7 @@ elif page == 'Analysis' :
         
             line_5.show() 
 
-    with tab6:
-        st.info('China exports value in cleantech has increased steadily since 2018.")
+  
         
 
 
@@ -195,6 +194,9 @@ elif page == 'Analysis' :
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Wind')
         
             line_7.show() 
+
+    with tab6:
+        st.info('China exports value in cleantech has increased steadily since 2018.')
 
   
 
