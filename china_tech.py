@@ -1,2 +1,8 @@
-with open('/kaggle/working/china_tech.py', 'r') as f:
-    print(f.read())
+from pathlib import Path
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parent
+
+df = pd.read_csv(
+    BASE_DIR / 'china_exports_cleaned.csv'
+)
