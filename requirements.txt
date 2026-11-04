@@ -1,5 +1,5 @@
 
-streamlit
+
 pandas
 numpy
 plotly
@@ -7,3 +7,5 @@ scikit-learn
 joblib
 category-encoders
 datasist
+streamlit
+streamlit-extras
