@@ -78,7 +78,7 @@ if page == 'Overview':
 elif page == 'Analysis' :
     tab1,tab2,tab3,tab4,tab5,tab6 = st.tabs(['Distributions','Exports by  Category',
                                              'Exports by Region','Time Series - Amount', 
-                                             'Time Series - Seasonality by Category','Summary])
+                                             'Time Series - Seasonality by Category','Summary'])
     
     with tab1 :
         col6,col7= st.columns(2,gap = 'large')
