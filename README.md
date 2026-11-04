@@ -11,7 +11,7 @@ This projects studies China's cleantech exports over 8 years (2018 : 2026) acros
 
 -Which region has highest exports and which has lowest ?
 
--Regional and seasonality patterns investigations in exports such as :
+-Seasonality patterns investigations in exports such as :
 Which months have the greatest variability?
 Are some months consistently stronger than others?
 Do Batteries, EVs, Solar PV, etc. have different seasonal patterns?
