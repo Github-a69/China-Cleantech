@@ -176,7 +176,7 @@ elif page == 'Analysis' :
 
         with col11:
             
-            df_solar = df[df['Commodity category']=='Solar PV']].groupby('Month')['Amount (USD)'].sum().reset_index()
+            df_solar = df[df['Commodity category']=='Solar PV'].groupby('Month')['Amount (USD)'].sum().reset_index()
         
             line_6= px.line( df_solar, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Solar PV')
@@ -188,7 +188,7 @@ elif page == 'Analysis' :
         
         with col12:
             
-            df_wind = df[df['Commodity category']=='Wind']].groupby('Month')['Amount (USD)'].sum().reset_index()
+            df_wind = df[df['Commodity category']=='Wind'].groupby('Month')['Amount (USD)'].sum().reset_index()
         
             line_7= px.line( df_wind, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Wind')
