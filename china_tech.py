@@ -134,7 +134,7 @@ elif page == 'Analysis' :
 
         with col7:
 
-            df_battery = df[df['Commodity category']=='Batteries']].groupby('Month')['Amount (USD)'].sum().reset_index()
+            df_battery = df[df['Commodity category']=='Batteries'].groupby('Month')['Amount (USD)'].sum().reset_index()
         
             line_2 = px.line( monthly_avg, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Batteries')
@@ -144,7 +144,7 @@ elif page == 'Analysis' :
 
         with col8:
 
-            df_ev = df[df['Commodity category']=='EVs']].groupby('Month')['Amount (USD)'].sum().reset_index()
+            df_ev = df[df['Commodity category']=='EVs'].groupby('Month')['Amount (USD)'].sum().reset_index()
         
             line_3 = px.line( df_ev, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - EVs')
@@ -152,7 +152,7 @@ elif page == 'Analysis' :
             line_3.show() 
 
         with col9:
-            df_grid = df[df['Commodity category']=='Grid']].groupby('Month')['Amount (USD)'].sum().reset_index()
+            df_grid = df[df['Commodity category']=='Grid'].groupby('Month')['Amount (USD)'].sum().reset_index()
         
             line_4= px.line( df_grid, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Grid')
@@ -162,7 +162,7 @@ elif page == 'Analysis' :
 
         with col10:
             
-            df_heat = df[df['Commodity category']=='Heating and cooling systems']].groupby('Month')['Amount (USD)'].sum().reset_index()
+            df_heat = df[df['Commodity category']=='Heating and cooling systems'].groupby('Month')['Amount (USD)'].sum().reset_index()
         
             line_5= px.line( df_heat, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Heating and cooling systems')
