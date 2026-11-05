@@ -4,7 +4,6 @@
 
 import pandas as pd
 import streamlit as st
-from streamlit_extras.metric_cards import style_metric_cards
 import plotly.express as px
 import joblib
 import category_encoders 
