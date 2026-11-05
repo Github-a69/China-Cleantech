@@ -53,24 +53,22 @@ if page == 'Overview':
 
 
 
+    col1, col2, col3 , col4 = st.columns(5)
 
-    def metrics() :
-        col1, col2, col3 , col4 = st.columns(5)
-
-        total_countries = len(df['Area'].unique())
-        avg_amount = round(df['Amount (USD)'].mean(),2)
-        min_amount= round(df['Amount (USD)'].min(),2)
-        max_amount= round(df['Amount (USD)'].max(),2)
+    total_countries = len(df['Area'].unique())
+    avg_amount = round(df['Amount (USD)'].mean(),2)
+    min_amount= round(df['Amount (USD)'].min(),2)
+    max_amount= round(df['Amount (USD)'].max(),2)
 
 
 
-        col1.metric(label='Total Countries', value=total_countries)
-        col2.metric(label="Total Categories", value= 6)
-        col3.metric(label='Average Amount', value=avg_amount)
-        col4.metric(label='Min Amount', value=min_amount)
-        col5.metric(label='Max Amount', value=max_amount)
+    col1.caption.metric(label='Total Countries', value=total_countries)
+    col2.caption.metric(label="Total Categories", value= 6)
+    col3.caption.metric(label='Average Amount', value=avg_amount)
+    col4.caption.metric(label='Min Amount', value=min_amount)
+    col5.caption.metric(label='Max Amount', value=max_amount)
 
-        style_metric_cards()
+        
 
     
        # analysis and visualization page
