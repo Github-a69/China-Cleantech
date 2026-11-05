@@ -163,7 +163,7 @@ elif page == 'Analysis' :
             line_3 = px.line( df_ev, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - EVs')
         
-             st.plotly_chart(line_3,use_container_width=True)
+            st.plotly_chart(line_3,use_container_width=True)
 
         with col9:
             df_grid = df[df['Commodity category']=='Grid'].groupby('Month')['Amount (USD)'].mean().reset_index()
@@ -171,7 +171,7 @@ elif page == 'Analysis' :
             line_4= px.line( df_grid, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Grid')
         
-             st.plotly_chart(line_4,use_container_width=True)
+            st.plotly_chart(line_4,use_container_width=True)
 
 
         with col10:
@@ -181,7 +181,7 @@ elif page == 'Analysis' :
             line_5= px.line( df_heat, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Heating and cooling systems')
         
-             st.plotly_chart(line_5,use_container_width=True)
+            st.plotly_chart(line_5,use_container_width=True)
 
   
         
@@ -195,7 +195,7 @@ elif page == 'Analysis' :
             line_6= px.line( df_solar, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Solar PV')
         
-             st.plotly_chart(line_6,use_container_width=True)
+            st.plotly_chart(line_6,use_container_width=True)
 
 
 
@@ -207,7 +207,7 @@ elif page == 'Analysis' :
             line_7= px.line( df_wind, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Wind')
         
-             st.plotly_chart(line_7,use_container_width=True)
+            st.plotly_chart(line_7,use_container_width=True)
 
     with tab6:
         
