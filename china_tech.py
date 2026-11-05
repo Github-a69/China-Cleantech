@@ -241,10 +241,10 @@ else:
                                                     max_value= float(df['Amount (USD)'].max()))
 
 
-    year = st.number_input("Year",min_value=2018,max_value=2030,value=2027,step=1)
+    year = st.sidebar.number_input("Year",min_value=2018,max_value=2030,value=2027,step=1)
 
 
-    month = st.selectbox('Month', list(range(1, 13)))
+    month = st.sidebar.number_input("Month",min_value=1,max_value=12,value=1,step=1)
 
 
 
