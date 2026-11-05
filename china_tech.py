@@ -61,11 +61,39 @@ if page == 'Overview':
 
 
 
-    col1.caption.metric(label='Total Countries', value=total_countries)
-    col2.caption.metric(label="Total Categories", value= 6)
-    col3.caption.metric(label='Average Amount', value=avg_amount)
-    col4.caption.metric(label='Min Amount', value=min_amount)
-    col5.caption.metric(label='Max Amount', value=max_amount)
+
+    with col1:
+        with st.container(border=True):
+            st.metric("Tota Countries", total_countries)
+
+
+    with col2:
+        with st.container(border=True):
+            st.metric("Total Categories",6)
+
+
+    
+    with col3:
+        with st.container(border=True):
+            st.metric('Average Eports Amount',avg_amount)
+
+    
+    with col4:
+        with st.container(border=True):
+            st.metric('Minimun Eports Amount',min_amount)
+    
+    
+  
+    with col5:
+        with st.container(border=True):
+            st.metric('Minimun Eports Amount',min_amount)
+
+
+
+    with col5:
+        with st.container(border=True):
+            st.metric('Maximun Eports Amount',max_amount)
+    
 
         
 
