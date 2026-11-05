@@ -74,12 +74,12 @@ if page == 'Overview':
     
     with col3:
         with st.container(border=True):
-            st.metric('Average Eports Amount',f'{avg_amount:,.0f})
+            st.metric('Average Eports Amount',f'{avg_amount:,.0f} USD')
 
     
     with col4:
         with st.container(border=True):
-            st.metric("Maximum Exports Aount", f"{max_amount:,.0f}")
+            st.metric("Maximum Exports Aount", f"{max_amount:,.0f} USD")
     
 
         
