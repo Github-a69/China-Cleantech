@@ -51,14 +51,14 @@ if page == 'Overview':
 
 
 
-
+    # General KPIs
     col1, col2, col3 , col4 = st.columns(4)
 
     total_countries = len(df['Area'].unique())
     avg_amount = round(df['Amount (USD)'].mean(),2)
     max_amount= round(df['Amount (USD)'].max(),2)
 
-     def format_number(value):
+    def format_number(value):
         if value >= 1e9:
             return f"{value/1e9:.2f}B"
         elif value >= 1e6:
