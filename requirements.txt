@@ -6,7 +6,7 @@ scipy==1.16.3
 scikit-learn==1.6.1
 joblib==1.6.0
 category-encoders==2.11.2
-plotly
+plotly==6.5.0
 datasist
 
 
