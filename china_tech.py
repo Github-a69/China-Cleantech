@@ -52,11 +52,10 @@ if page == 'Overview':
 
 
 
-    col1, col2, col3 , col4,col5 = st.columns(5)
+    col1, col2, col3 , col4 = st.columns(4)
 
     total_countries = len(df['Area'].unique())
     avg_amount = round(df['Amount (USD)'].mean(),2)
-    min_amount= round(df['Amount (USD)'].min(),2)
     max_amount= round(df['Amount (USD)'].max(),2)
 
 
@@ -75,18 +74,12 @@ if page == 'Overview':
     
     with col3:
         with st.container(border=True):
-            st.metric('Average Eports Amount',avg_amount)
+            st.metric('Average Eports Amount',f'{avg_amount:,.0f})
 
     
     with col4:
         with st.container(border=True):
-            st.metric('Minimun Eports Amount',min_amount)
-
-
-
-    with col5:
-        with st.container(border=True):
-            st.metric('Maximun Eports Amount',max_amount)
+            st.metric("Maximum Exports Aount", f"{max_amount:,.0f}")
     
 
         
