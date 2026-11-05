@@ -59,12 +59,12 @@ if page == 'Overview':
     max_amount= round(df['Amount (USD)'].max(),2)
 
      def format_number(value):
-            if value >= 1e9:
-                return f"{value/1e9:.2f}B"
-            elif value >= 1e6:
-                return f"{value/1e6:.2f}M"
-            else:
-                return f"{value:.2f}"
+        if value >= 1e9:
+            return f"{value/1e9:.2f}B"
+        elif value >= 1e6:
+            return f"{value/1e6:.2f}M"
+        else:
+            return f"{value:.2f}"
 
 
     with col1:
