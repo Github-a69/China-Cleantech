@@ -86,14 +86,14 @@ elif page == 'Analysis' :
             fig_1 = px.histogram(df, x='Amount (USD)', title='Distribution of Amouny (USD)',nbins=5,marginal='rug',
                                 color_discrete_sequence=['cornflowerblue'])
             fig_1.show()
-            st.plotly_chart(fig1,use_container_width=True)
+            st.plotly_chart(fig_1,use_container_width=True)
 
         with col7 :
             
-                fig_2 = px.histogram(df, x='Amount 12 month rolling sum (USD)', title='Distribution of Rolling Sum (USD)',nbins=5,marginal='rug',
+            fig_2 = px.histogram(df, x='Amount 12 month rolling sum (USD)', title='Distribution of Rolling Sum (USD)',nbins=5,marginal='rug',
                                 color_discrete_sequence=['cornflowerblue'])
-                fig_2.show()
-                st.plotly_chart(fig1,use_container_width=True)
+            fig_2.show()
+            st.plotly_chart(fig_2,use_container_width=True)
 
     with tab2:
         category_totals = (df[df['Commodity category'] != 'All technologies'].groupby('Commodity category')['Amount (USD)'].sum().reset_index().sort_values('Amount (USD)',
