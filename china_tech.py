@@ -106,14 +106,12 @@ elif page == 'Analysis' :
 
             fig_1 = px.histogram(df, x='Amount (USD)', title='Distribution of Exports Amount (USD)',nbins=5,marginal='rug',
                                 color_discrete_sequence=['cornflowerblue'])
-            fig_1.show()
             st.plotly_chart(fig_1,use_container_width=True)
 
         with col7 :
             
             fig_2 = px.histogram(df, x='Amount 12 month rolling sum (USD)', title='Distribution of Rolling Sum (USD)',nbins=5,marginal='rug',
                                 color_discrete_sequence=['cornflowerblue'])
-            fig_2.show()
             st.plotly_chart(fig_2,use_container_width=True)
 
     with tab2:
@@ -123,9 +121,7 @@ elif page == 'Analysis' :
 
         bar_1= px.bar( category_totals, x='Commodity category',y='Amount (USD)',
             title='Exports by Commodity Category',color_discrete_sequence=['skyblue'])
-        
-        bar_1.show()
-
+        st.plotly_chart(bar_1,use_container_width=True)
 
     with tab3:
         region_totals = (df[df['Region']!='Unknown'].groupby('Region')['Amount (USD)'].sum().reset_index().sort_values('Amount (USD)', ascending=False))
@@ -134,14 +130,14 @@ elif page == 'Analysis' :
         bar_2= px.bar(region_totals,x='Region', y='Amount (USD)',
             title='Exports by Region',color_discrete_sequence=['deepskyblue'])
         
-        bar_2.show()
+        st.plotly_chart(bar_2,use_container_width=True)
 
 
     with tab4:
         
         mean = df.groupby('Year')['Amount (USD)'].mean().reset_index()
         line = px.line(mean,y='Amount (USD)',x='Year',title='Exports Trend Over Time',color_discrete_sequence=['dodgerblue'])
-        line.show()
+        st.plotly_chart(line,use_container_width=True)
 
 
     with tab5:
@@ -157,7 +153,7 @@ elif page == 'Analysis' :
             line_2 = px.line(  df_battery , x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Batteries')
         
-            line_2.show() 
+            st.plotly_chart(line_2,use_container_width=True)
 
 
         with col8:
@@ -167,7 +163,7 @@ elif page == 'Analysis' :
             line_3 = px.line( df_ev, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - EVs')
         
-            line_3.show() 
+             st.plotly_chart(line_3,use_container_width=True)
 
         with col9:
             df_grid = df[df['Commodity category']=='Grid'].groupby('Month')['Amount (USD)'].mean().reset_index()
@@ -175,7 +171,7 @@ elif page == 'Analysis' :
             line_4= px.line( df_grid, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Grid')
         
-            line_4.show() 
+             st.plotly_chart(line_4,use_container_width=True)
 
 
         with col10:
@@ -185,7 +181,7 @@ elif page == 'Analysis' :
             line_5= px.line( df_heat, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Heating and cooling systems')
         
-            line_5.show() 
+             st.plotly_chart(line_5,use_container_width=True)
 
   
         
@@ -199,7 +195,7 @@ elif page == 'Analysis' :
             line_6= px.line( df_solar, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Solar PV')
         
-            line_6.show() 
+             st.plotly_chart(line_6,use_container_width=True)
 
 
 
@@ -211,7 +207,7 @@ elif page == 'Analysis' :
             line_7= px.line( df_wind, x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Wind')
         
-            line_7.show() 
+             st.plotly_chart(line_7,use_container_width=True)
 
     with tab6:
         
