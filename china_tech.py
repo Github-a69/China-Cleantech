@@ -81,12 +81,6 @@ if page == 'Overview':
     with col4:
         with st.container(border=True):
             st.metric('Minimun Eports Amount',min_amount)
-    
-    
-  
-    with col5:
-        with st.container(border=True):
-            st.metric('Minimun Eports Amount',min_amount)
 
 
 
