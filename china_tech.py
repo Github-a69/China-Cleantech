@@ -131,7 +131,7 @@ elif page == 'Analysis' :
 
         with col7:
 
-            df_battery = df[df['Commodity category']=='Batteries'].groupby('Month')['Amount (USD)'].,mean().reset_index()
+            df_battery = df[df['Commodity category']=='Batteries'].groupby('Month')['Amount (USD)'].mean().reset_index()
         
             line_2 = px.line(  df_battery , x='Month',color_discrete_sequence=['deeppink'],
                 y='Amount (USD)', markers=True, title='Monthly Seasonality - Batteries')
