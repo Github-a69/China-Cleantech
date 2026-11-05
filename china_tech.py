@@ -212,8 +212,8 @@ elif page == 'Analysis' :
     with tab6:
         
         st.info('China exports value in cleantech has increased steadily since 2018.')
-        st.info('different categories have different patterns but there is a recurrent drop pattern in both February and October in all categories')
-        st.info('Batteries are the top category in exports and Europe is the top region in investing in cleantech')
+        st.info('Different categories have different seasonal exports patterns but there is a recurrent drop in both February and October in all categories.')
+        st.info('Batteries are the top category in exports and Europe is the top region.')
   
 
 
