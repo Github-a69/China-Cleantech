@@ -221,7 +221,7 @@ elif page == 'Analysis' :
 # prediction page
 
 else:
-    st.image("https://unsplash.com/photos/blue-solar-panel-boards-V4ZYJZJ3W4M")
+    st.image("https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D")
     
 
   
