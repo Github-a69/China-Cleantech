@@ -58,7 +58,13 @@ if page == 'Overview':
     avg_amount = round(df['Amount (USD)'].mean(),2)
     max_amount= round(df['Amount (USD)'].max(),2)
 
-
+     def format_number(value):
+            if value >= 1e9:
+                return f"{value/1e9:.2f}B"
+            elif value >= 1e6:
+                return f"{value/1e6:.2f}M"
+            else:
+                return f"{value:.2f}"
 
 
     with col1:
@@ -74,12 +80,12 @@ if page == 'Overview':
     
     with col3:
         with st.container(border=True):
-            st.metric('Average Eports Amount',f'{avg_amount:,.0f} USD')
+            st.metric('Average Eports Amount',format_number(avg_amount), ' USD')
 
     
     with col4:
         with st.container(border=True):
-            st.metric("Maximum Exports Aount", f"{max_amount:,.0f} USD")
+            st.metric("Maximum Exports Aount", format_number(max_amount), " USD")
     
 
         
