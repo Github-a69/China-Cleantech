@@ -30,7 +30,7 @@ knn = joblib.load('knn.pkl')
 
 # overview page
 
-page=st.sidebar.radio('select page',['Overview','Analysis','Forecasting'])
+page=st.sidebar.radio('select page',['Overview','Analysis','Prediction'])
 
 
 if page == 'Overview':
@@ -52,7 +52,7 @@ if page == 'Overview':
 
 
 
-    col1, col2, col3 , col4 = st.columns(5)
+    col1, col2, col3 , col4,col5 = st.columns(5)
 
     total_countries = len(df['Area'].unique())
     avg_amount = round(df['Amount (USD)'].mean(),2)
@@ -83,7 +83,7 @@ elif page == 'Analysis' :
 
         with col6 :
 
-            fig_1 = px.histogram(df, x='Amount (USD)', title='Distribution of Amouny (USD)',nbins=5,marginal='rug',
+            fig_1 = px.histogram(df, x='Amount (USD)', title='Distribution of Exports Amount (USD)',nbins=5,marginal='rug',
                                 color_discrete_sequence=['cornflowerblue'])
             fig_1.show()
             st.plotly_chart(fig_1,use_container_width=True)
