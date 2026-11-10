@@ -80,12 +80,12 @@ if page == 'Overview':
     
     with col3:
         with st.container(border=True):
-            st.metric('Average Eports Amount',format_number(avg_amount), ' USD')
+            st.metric('Average Exports Amount',format_number(avg_amount), ' USD')
 
     
     with col4:
         with st.container(border=True):
-            st.metric("Maximum Exports Aount", format_number(max_amount), " USD")
+            st.metric("Maximum Exports Amount", format_number(max_amount), " USD")
     
 
         
