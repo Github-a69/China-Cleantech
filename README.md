@@ -14,7 +14,6 @@ This projects studies China's cleantech exports over 8 years (2018 : 2026) acros
 -Seasonality patterns investigations in exports such as :
 Do Batteries, EVs, Solar PV, etc. have different seasonal patterns?
 When do China's cleantech exports tend to peak or decline?
-Are some months consistently stronger than others?
  
 -Predictive Analysis:
 using regression models and time series analysis, we are forecasting the export rolling sum USD.
