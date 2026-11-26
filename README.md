@@ -5,15 +5,15 @@ This projects studies China's cleantech exports over 8 years (2018 : 2026) acros
 
 # Key Questions and Analysis :
 
--What is the yearly exports trend ?
+*What is the yearly exports trend ?
 
--Which category has highest exports and which has lowest ?
+*Which category has highest exports and which has lowest ?
 
--Which region has highest exports and which has lowest ?
+*Which region has highest exports and which has lowest ?
 
--Seasonality patterns investigations in exports such as :
+*Seasonality patterns investigations in exports such as :
 Do Batteries, EVs, Solar PV, etc. have different seasonal patterns?
 When do China's cleantech exports tend to peak or decline?
  
--Predictive Analysis:
+*Predictive Analysis:
 using regression models and time series analysis, we are forecasting the export rolling sum USD.
